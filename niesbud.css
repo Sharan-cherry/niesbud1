@@ -1,0 +1,272 @@
+:root{
+    --primarycolor: #0076de;
+    --whitecolor: #fff;
+    --blackcolor: #333;
+    --greycolor: #f6f8fa;
+    --labelcolor: #64b1f5;
+    --yellowcolor: #ffd723;
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    font-family: 'Nunito', sans-serif;
+}
+
+body {
+    width: 100%;
+    height: auto;
+
+}
+h1{
+    line-height: 1.5;
+}
+
+.navbar {
+    width: 100%;
+    height: 60px;
+    display: flex;
+    justify-content: space-between;
+    position: fixed;
+    top: 0;
+    left:0;
+    padding: 1rem 2.5rem;
+    z-index: 10;
+    color: var(--blackcolor);
+    background: black;
+}
+/* changing navbar logo to white */
+.navbar-logo > a{
+    letter-spacing: 2.5;
+    text-decoration: none;
+    color: var(--whitecolor);
+}
+/* creating space between the navbar menu. */
+.navbar-menu{
+    width: 400px;
+    display: flex;
+    justify-content: space-between;
+}
+/* creating attribute coliur in white */
+.navbar-menu > a {
+    color: var(--whitecolor);
+    text-decoration: none;
+}
+.navbar-menu a:hover{
+    color: whitesmoke;
+}
+/* diplaying the items with space and fix to the navbar*/
+.menu-toggle{
+    display: none;
+}
+
+.menu-toggle .bar{
+    width: 15px;
+    height: 2px;
+    margin: 3px auto;
+    transition: all 0.3 ease-in-out;
+    background-color: var(--whitecolor);
+    cursor: pointer;
+}
+/* image adjustment*/
+header {
+    width: 100%;
+    height: 690px;
+    background-image: url("https://imgs.search.brave.com/ga4RnQuA4Q0Op3-LVIbtmRU99BoRqcVkPFL2e6jGr84/rs:fit:1080:720:1/g:ce/aHR0cHM6Ly9pbWFn/ZXMudW5zcGxhc2gu/Y29tL3Bob3RvLTE1/NDMyNjk2NjQtMDJl/OTQxYzA1MmY3P2Ny/b3A9ZW50cm9weSZj/cz10aW55c3JnYiZm/aXQ9bWF4JmZtPWpw/ZyZpeGlkPU1ud3hN/akEzZkRCOE1YeGhi/R3g4Zkh4OGZIeDhm/SHd4TmpFNU9UUTJP/VEF3Jml4bGliPXJi/LTEuMi4xJnE9ODAm/dz0xMDgw");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
+/* title in image */
+.header-title {
+    position: absolute;
+    top: 12rem;
+    left: 3rem;
+    letter-spacing: 3;
+    font-weight: bolder;
+    font-size: 52px;
+    color: var(--whitecolor);
+    text-shadow: 4px 2px 0pxx rbga(0,0,0,0.2);
+}
+
+/* changing the middle letter colour*/
+.header-title > span {
+    color: var(--primarycolor);
+}
+
+
+/* ................... Career Advice .......................... */
+
+
+/* Arranging all the text at center */
+.blog {
+    width: 100%;
+    height: auto;
+    text-align: center;
+    padding: 5rem 1rem;
+}
+
+.blog-wrapper{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 100%;
+    padding: 1rem;
+}
+/* setup the size cursor over the box*/
+
+.blog-card{
+    width: 300px;
+    height: auto;
+    margin: 1rem;
+    box-shadow: 0 1px 6px rbg(49 53 59/ 12%);
+    cursor: pointer;
+}
+/* image arranged in order */
+
+.blog-image{
+    width: 100%;
+    height:  150px;
+    object-fit: cover;
+}
+
+.blog-detail{
+    padding: 20px;
+}
+
+.blog-detail span {
+    color: var(--yellowcolor);
+    font-size: 1rem;
+}
+
+/*Giving some space to heading contant*/
+.blog-detail h4{
+    padding: 10px 0;
+}
+
+.divider {
+    margin: 1rem 0;
+    border: 1px solid var(--greycolor);
+}
+
+.blog-more {
+    color:  var(--primarycolor);
+    text-decoration: none;
+    font-size: 0.9rem;
+}
+
+/* hover effect to the carrer advice box*/
+.blog-card:hover {
+    box-shadow: rgba(100,100,111, 0.8) 0px 7px 29px 0px;
+}
+
+
+/*............. footer ...........*/
+
+
+footer{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: flex-start;
+    background: var(--primarycolor);
+    color: var(--whitecolor);
+    padding: 3rem;
+}
+
+.footer-wrapper{
+    display: flex;
+    flex-direction: column;
+    padding: 0.5rem;
+    justify-content:  flex-start;
+    align-items: flex-start;
+}
+
+.footer-wrapper h3, 
+.footer-wrapper h4{
+    line-height: 3;
+    color: var(--yellowcolor);
+}
+
+/* social media*/
+.social-media {
+    margin-top:  1rem;
+}
+
+.footer-wrapper a {
+    text-decoration:  none;
+    color: var(--greycolor);
+    line-height: 2;
+}
+.social-media{
+    margin-top: 1rem;
+}
+
+.social-media a{
+    text-decoration: none;
+    color: var(--greycolor);
+    margin-right:  10px;
+}
+
+.footer-wrapper a{
+    text-decoration: none;
+    color: var(--greycolor);
+    line-height: 2;
+}
+.footer-wrapper a:hover{
+    text-decoration: underline;
+}
+
+/* footer end*/
+
+
+/*. mobile Screen  */
+@media screen and (max-width: 600px) {
+    .menu-toggle ,
+    .bar{
+        display: block;
+        z-index: 3;
+    }
+
+    .menu-toggle.is-active .bar:nth-child(2){
+        opacity :0;
+    }
+
+    .menu-toggle.is-active .bar:nth-child(1){
+        transform: translate(5px) rotate(45deg);
+    }
+    .menu-toggle.is-active .bar:nth-child(3){
+        transform: translate(-5px) rotate(-45deg);
+    }
+
+    .navbar-menu{
+        flex-direction: column;
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        height: 100vh;
+        text-align: center;
+        background-color: var(--blackcolor);
+        display: none;
+        padding: 5rem;
+    }
+
+    .navbar-menu.active{
+        display: flex;
+    }
+
+    .navbar-menu a {
+        color: var(--whitecolor);
+        padding: 1.5rem;
+    }
+
+    .header-title{
+        font-size: 30px;
+    }
+}
